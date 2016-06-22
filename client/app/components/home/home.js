@@ -1,6 +1,13 @@
 // TODO: import required modules
+import _ from 'lodash';
+import './home.styl';
+import angular from 'angular';
 
-const home = angular.module('home', [
+//if ui router was not imported in 'app', and this wasn't a part of app, we would need to import the router here
+//cannot use import keyword in conditional, but can use require, like:
+//if(true) {require()}
+
+export const home = angular.module('home', [
 
 ])
 .config(function($stateProvider, $urlRouterProvider) {
