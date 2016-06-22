@@ -6,16 +6,16 @@ but we use gulp to orchestrate
  */
 module.exports = {
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js' //name of bundled file created
   },
 
-  devtool: 'sourcemap',
+  devtool: 'sourcemap', //how to handle debugging
 
   module: {
     loaders: [
       { test: /\.html$/, loader: 'raw' },
       { test: /\.styl$/, loader: 'css!style!stylus' },
-      // TODO: create loader for .js filest ransfroming from ES2015 to ES5
+      { test: /\.js$/, loader: 'babel?stage=1', exlude: [/node_modules/]}
     ]
   },
 
