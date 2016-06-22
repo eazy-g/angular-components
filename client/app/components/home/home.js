@@ -1,5 +1,5 @@
 import './home.styl';
-import angular from 'angular';
+import angular from 'angular'; //this has to be here for babel. it doesn't know about app.js, it only sees this file. without this line it would still run in browser
 import _ from 'lodash';
 
 // placing an export in front of ar var is the same
