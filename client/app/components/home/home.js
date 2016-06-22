@@ -15,7 +15,7 @@ export const home = angular.module('home', [
 
   $stateProvider.state('home', {
     url: '/',
-    template: `
+    template: ` //back ticks allow for multi line interpolation
       <section class="home">
         <div class="title">
           <h1>{{ title }}</h1>
