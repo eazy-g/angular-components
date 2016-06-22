@@ -24,6 +24,7 @@ describe('Blog', () => {
   describe('directive', ()=> {
     // TODO: test the directive to make sure it has the
     // right DDO and template and controller
+
   });
 
   describe('controller', ()=> {
