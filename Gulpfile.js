@@ -24,7 +24,7 @@ gulp.task('todo', function() {
 
 gulp.task('build', ['todo'], function() {
   return gulp.src(paths.entry)
-    .pipe(webpack(require('./webpack.config')))
+    .pipe(webpack(require('./webpack.config'))) //have to use ./ because without it, require would look in node modules. ./ means look in our files
     .pipe(gulp.dest(paths.dest));
   //TODO
   /*
